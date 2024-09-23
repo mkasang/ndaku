@@ -17,6 +17,10 @@ class HomeScreen extends StatelessWidget {
             margin: const EdgeInsets.all(10),
             child: ListTile(
               onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DetailHome()));
                 const DetailHome();
               },
               minTileHeight: 100,
